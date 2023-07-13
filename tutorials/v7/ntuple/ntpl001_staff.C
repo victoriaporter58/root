@@ -45,6 +45,9 @@ using RNTupleWriter = ROOT::Experimental::RNTupleWriter;
 constexpr char const* kNTupleFileName = "ntpl001_staff.root";
 
 void Ingest() {
+   
+   std::cout << "This is a test" << std::endl;
+   
    // The input file cernstaff.dat is a copy of the CERN staff data base from 1988
    ifstream fin(gROOT->GetTutorialDir() + "/tree/cernstaff.dat");
    assert(fin.is_open());
