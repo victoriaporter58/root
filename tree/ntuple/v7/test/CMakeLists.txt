@@ -23,6 +23,7 @@ if(MSVC)
                                      ${CMAKE_CURRENT_BINARY_DIR}/libCustomStruct.dll)
 endif()
 
+ROOT_ADD_GTEST(ntuple_ioerrors ntuple_ioerrors.cxx LIBRARIES ROOTDataFrame ROOTNTuple)
 ROOT_ADD_GTEST(ntuple_basics ntuple_basics.cxx LIBRARIES ROOTDataFrame ROOTNTuple MathCore CustomStruct)
 ROOT_ADD_GTEST(ntuple_cluster ntuple_cluster.cxx LIBRARIES ROOTNTuple)
 ROOT_ADD_GTEST(ntuple_descriptor ntuple_descriptor.cxx LIBRARIES ROOTDataFrame ROOTNTuple MathCore CustomStruct)
